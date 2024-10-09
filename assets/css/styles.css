@@ -1,0 +1,204 @@
+/* General reset */
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f0;
+    max-height: 100%;
+}
+
+
+/* Navbar styling */
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav_header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+
+.nav_title {
+    font-size: larger;
+    margin-left: 20px;
+    text-decoration: none;
+    color:#00c800;
+    font-weight: bold;
+    font-style: italic;
+    
+
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.nav_link {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav_link:hover {
+    color: #6cae75;
+    transition: 0.5s;
+}
+
+
+/* Home Section Styling */
+.home_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home_image {
+    width: 100px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #00c800;
+    font-size: 15px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #6cae75;
+}
+
+
+/* About Section Styling */
+.about_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Benefits Section Styling */
+.benefits_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
+
+/* How It Works section styling */
+.how_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how_section video {
+    margin-bottom: 50px;
+}
+
+/* Contact section styling */
+
+.contact_section {
+    background-color: #f9f9f9;
+
+    border-radius: 20px;
+    padding: 30px 30px ;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.contact_form label {
+    font-size: 1em;
+    color: #666;
+}
+
+.contact_form input,
+.contact_form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 50%;
+}
+
+.contact_form textarea {
+    resize: vertical;
+}
+
+.contact_form button {
+    background-color: #00c800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact_form button:hover {
+    background-color: #6cae75;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    
+}
