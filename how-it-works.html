@@ -21,7 +21,7 @@
                 <ul class="nav_list">
                     <a href="index.html" class="nav_link">Home</a>
                     <a href="about.html" class="nav_link">About</a>
-                    <a href="how-it-works.html" class="nav_link">How It Works</a>
+                    <a href="how-it-works.html" class="nav_link">FAQ</a>
                     <a href="contact.html" class="nav_link">Contact Us</a>
                 </ul>
             </div>
@@ -29,9 +29,18 @@
 
     <main class="how_main">
         <section class="how_section" id="how-it-works">
-            <h2>How It Works</h2>
-            <p>The "Find Your Micro:bit Friend" device uses a combination of micro:bit beacon and receiver programs to help users track proximity. The beacon micro:bit continuously emits a low-power radio signal, and the receiver micro:bit captures and measures this signal to indicate how close it is to the beacon.</p>
-            <p>The receiver's program maps the radio signal strength (ranging from -95 to -42) to a visual scale displayed on the micro:bit’s LED matrix. The higher the signal strength, the more LEDs light up, showing proximity in real-time.</p>
+            <h2>FAQ</h2>
+            <p> <b> 1. How does the "Find Your Micro Friend" device function? </b>
+                The beacon microbit (friend 1)  continuously transmits a radio signal, which the receiver (friend 2 ) detects. The receiver vibrates and displays signal strength on its LED screen, with more LEDs lighting up as it moves closer to the beacon.
+                <b>2. Who is the target audience for this device? </b>
+                The device is specifically designed to assist individuals with hearing impairments by providing tactile and visual feedback to track the proximity of familiar people, but hey, anyone can explore and access it! 
+                <b>3. How is signal strength displayed on the receiver? </b>
+                The receiver’s LED matrix presents a bar graph, with 0 to 5 LEDs lighting up. A higher number of LEDs indicates closer proximity to the beacon which means your friend is getting closer to you.
+                <b>4. Is it possible for multiple receivers to track the same beacon? </b>
+                Yes, the system allows up to four different micro to simultaneously track the same beacon. The more the merrier! (isnt it more of how the individual microbit act as the beacon itself so that “friends” can find each other since the microbit constantly sends out signal to other microbits)
+                <b>5. What is the effective range of the device? </b>
+                The device can detect signals within a range of up to 70 metres, though this may be affected by environmental factors such as obstacles and interference.
+                </p>
             <video width="520" height="440" controls>
                 <source src="assets/img/IS114_Mission1_CL2.7.mp4" type="video/mp4">
                 Your browser does not support the video tag.
