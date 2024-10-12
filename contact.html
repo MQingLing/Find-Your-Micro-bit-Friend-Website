@@ -16,8 +16,7 @@
         <!--==================== HEADER ====================-->
         <nav class="nav_conatiner">
             <div class="nav_header">
-                <a href="index.html" class="nav_title">Finding Friends</a>
-                <img src="C:\Users\Wei Ming\Documents\FindingFriends.png" alt="Logo For Finding Friends">
+                <img src="assets/img/missionweblogo.png" alt="Logo For Finding Friends">
 
                 <ul class="nav_list">
                     <a href="index.html" class="nav_link">Home</a>
@@ -41,33 +40,17 @@
                     <button type="submit" class="button">Submit</button>
                     
                 </form>
-                <div id="responseMessage" class="hidden">
-                    <span class="tick">✔</span> Response Submitted
-                </div>
             </section>
         </main>
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent the default form submission
-        
-                // Display the response message
-                const responseMessage = document.getElementById('responseMessage');
-                responseMessage.classList.remove('hidden');
-        
-                // Optionally, reset the form
-                this.reset();
-        
-                // Hide the response message after 3 seconds
-                setTimeout(() => {
-                    responseMessage.classList.add('hidden');
-                }, 3000); // Change the time in milliseconds as needed
-            });
-        </script>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
             <h1 class="footer_title">Mission 2</h1>
             <p>&#169;2024 Brought to you by Qing Ling, Wei Ming, Kaashvi and Ethan </p>
         </footer>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        
     </body>
 </html>

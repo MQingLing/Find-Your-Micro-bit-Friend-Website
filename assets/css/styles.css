@@ -27,6 +27,12 @@ body, ul {
     padding-bottom: 15px;
 }
 
+.nav_header img {
+    height: 75px;
+    width: 75px;
+    margin-left: 20px;
+}
+
 .nav_title {
     font-size: larger;
     margin-left: 20px;
