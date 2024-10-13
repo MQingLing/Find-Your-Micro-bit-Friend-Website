@@ -16,11 +16,51 @@
                 margin: 0;
                 font-family: Arial, sans-serif;
                 display: flex;
+                background-color: #f9f9f9;
+            }
+            .image-container{
+                flex:1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
             }
             .text-container{
-                flex:1;
+                flex:2;
                 padding:20px;
                 text-align:left;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+            nav{
+                background: #4caf50;
+                color:white;
+                padding:10px;
+            }
+            .nav_header{
+                display:flex;
+                align-items: center;
+            }
+            .nav_list{
+                list-style-type: None;
+                padding: 0;
+                margin-left: auto;
+                display: flex;
+            }
+            .nav_link:hover{
+                color:#f0f0f0;
+            }
+            footer{
+                background: #4caf50;
+                color:white;
+                text-align: center;
+                padding: 10px 0;
+            }
+            footer h1{
+                margin: 0;
             }
         </style>
     </head>
@@ -40,7 +80,11 @@
             </div>
         </nav>
 
-        <main class="about_main">
+        <main class="about_main" style="display: flex;">
+            <div class="image-container">
+                <img src="C:\Users\Wei Ming\Documents\image.jpg" alt="Microbit">
+            </div>
+            <div class="text-container">
             <section class="about_section" id="about">
                 <h2>FIND YOUR MICROBIT FRIEND</h2>
                 <p>Just imagine you guys decide to meet at a busy street or mall, and youre surrounded with tallasss dudes. Obviously, you are not going to be able to find your friends like that since YOU CANT EVEN SEE EYE TO EYE WITH ANYONE! 😠😠😠 
@@ -71,6 +115,7 @@
                     Stay connected, feel the distance, and never miss a moment!
                     </p>
             </section>
+            </div>
         </main>
     
         <!--==================== FOOTER ====================-->
