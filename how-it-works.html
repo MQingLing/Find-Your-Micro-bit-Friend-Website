@@ -12,17 +12,35 @@
 
         <title>Find Your Micro:bit Friend</title>
         <style>
-            .dropdown {
-                margin: 10px 0;
+            .faq-container{
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            .dropdown{
+                margin: 15px 0;
                 cursor: pointer;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                transition: background-color 0.3s;
             }
-            .answer {
-                display: none; /* Initially hide the answer */
-                margin-top: 5px; /* Spacing for the answer */
+            .dropdown:hover{
+                background-color: #f1f1f1;
             }
-            .toggle-sign {
-                font-weight: bold; /* Make the "+" sign bold */
-                margin-right: 10px; /* Space between the sign and question */
+            .answer{
+                display: none;
+                margin-top: 5px;
+                padding: 10px;
+                background-color: #fff;
+                border-left: 4px solid #007bff;
+            }
+            .toggle-sign{
+                font-weight: bold;
+                margin-right: 10px;
             }
         </style>
     </head>
