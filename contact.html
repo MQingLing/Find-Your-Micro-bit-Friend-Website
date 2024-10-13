@@ -40,6 +40,7 @@
                     <button type="submit" class="button">Submit</button>
                     
                 </form>
+                <div id="responseMessage" style="display:none; margin-top:15px; color: green;"></div>
             </section>
         </main>
 
@@ -50,7 +51,16 @@
         </footer>
 
         <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event){
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const responseMessage = document.getElementById('responseMessage');
+                responseMessage.style.display = 'block'
+                responseMessage.textContent = 'Thank you, ${name}! Your message has been submitted successfully.';
+                this.reset();
+            });
+        </script>
         
     </body>
 </html>
