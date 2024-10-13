@@ -27,35 +27,94 @@
             </div>
         </nav>
 
-    <main class="how_main">
-        <section class="how_section" id="how-it-works">
-            <h2>FAQ</h2>
-            <p> <b> 1. How does the "Find Your Micro Friend" device function? </b> <br>
-                The beacon microbit (friend 1)  continuously transmits a radio signal, which the receiver (friend 2 ) detects. The receiver vibrates and displays signal strength on its LED screen, with more LEDs lighting up as it moves closer to the beacon.
-                <br>
-                <br>
-                <b> 2. Who is the target audience for this device? </b> <br>
-                The device is specifically designed to assist individuals with hearing impairments by providing tactile and visual feedback to track the proximity of familiar people, but hey, anyone can explore and access it! 
-                <br>
-                <br>
-                <b>3. How is signal strength displayed on the receiver? </b> <br>
-                The receiver’s LED matrix presents a bar graph, with 0 to 5 LEDs lighting up. A higher number of LEDs indicates closer proximity to the beacon which means your friend is getting closer to you.
-                <br>
-                <br>
-                <b>4. Is it possible for multiple receivers to track the same beacon? </b> <br>
-                Yes, the system allows up to four different micro to simultaneously track the same beacon. The more the merrier! (isnt it more of how the individual microbit act as the beacon itself so that “friends” can find each other since the microbit constantly sends out signal to other microbits)
-                <br>
-                <br>
-                <b>5. What is the effective range of the device? </b> <br>
-                The device can detect signals within a range of up to 70 metres, though this may be affected by environmental factors such as obstacles and interference.
-                </p>
-            <video width="520" height="440" controls>
-                <source src="assets/img/IS114_Mission1_CL2.7.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            <p>The device is especially useful for the hearing-impaired, offering a tactile and visual way to monitor the distance between individuals without relying on sound.</p>
-        </section>
-    </main>
+        <main class="how_main">
+            <section class="how_section" id="how-it-works">
+                <h2>FAQ</h2>
+        
+                <div class="dropdown">
+                    <span class="toggle-sign">+</span>
+                    <b>1. How does the "Find Your Micro Friend" device function?</b>
+                    <div class="answer">
+                        The beacon microbit (friend 1) continuously transmits a radio signal, which the receiver (friend 2) detects. The receiver vibrates and displays signal strength on its LED screen, with more LEDs lighting up as it moves closer to the beacon.
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <span class="toggle-sign">+</span>
+                    <b>2. Who is the target audience for this device?</b>
+                    <div class="answer">
+                        The device is specifically designed to assist individuals with hearing impairments by providing tactile and visual feedback to track the proximity of familiar people, but hey, anyone can explore and access it!
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <span class="toggle-sign">+</span>
+                    <b>3. How is signal strength displayed on the receiver?</b>
+                    <div class="answer">
+                        The receiver’s LED matrix presents a bar graph, with 0 to 5 LEDs lighting up. A higher number of LEDs indicates closer proximity to the beacon which means your friend is getting closer to you.
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <span class="toggle-sign">+</span>
+                    <b>4. Is it possible for multiple receivers to track the same beacon?</b>
+                    <div class="answer">
+                        Yes, the system allows up to four different micro to simultaneously track the same beacon. The more the merrier! (Isn't it more of how the individual microbit acts as the beacon itself so that “friends” can find each other since the microbit constantly sends out signals to other microbits?)
+                    </div>
+                </div>
+        
+                <div class="dropdown">
+                    <span class="toggle-sign">+</span>
+                    <b>5. What is the effective range of the device?</b>
+                    <div class="answer">
+                        The device can detect signals within a range of up to 70 metres, though this may be affected by environmental factors such as obstacles and interference.
+                    </div>
+                </div>
+        
+                <video width="520" height="440" controls>
+                    <source src="assets/img/IS114_Mission1_CL2.7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+        
+                <p>The device is especially useful for the hearing-impaired, offering a tactile and visual way to monitor the distance between individuals without relying on sound.</p>
+            </section>
+        </main>
+        
+        <style>
+            .dropdown {
+                margin: 10px 0;
+                cursor: pointer;
+            }
+            .answer {
+                display: none; /* Initially hide the answer */
+                margin-top: 5px; /* Spacing for the answer */
+            }
+            .toggle-sign {
+                font-weight: bold; /* Make the "+" sign bold */
+                margin-right: 10px; /* Space between the sign and question */
+            }
+        </style>
+        
+        <script>
+            // Select all dropdown elements
+            const dropdowns = document.querySelectorAll('.dropdown');
+        
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', () => {
+                    const answer = dropdown.querySelector('.answer');
+                    const sign = dropdown.querySelector('.toggle-sign');
+        
+                    // Toggle visibility of the answer
+                    if (answer.style.display === 'none' || answer.style.display === '') {
+                        answer.style.display = 'block'; // Show the answer
+                        sign.textContent = '-'; // Change "+" to "-"
+                    } else {
+                        answer.style.display = 'none'; // Hide the answer
+                        sign.textContent = '+'; // Change "-" back to "+"
+                    }
+                });
+            });
+        </script>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
